@@ -4,18 +4,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --purple: #6b1d5c;
+    --lavender: #a04387;
+    --pink: #ee77a6;
+    --yellow: rgb(224, 212, 37);
+    --brown: #553424;
+    --dark-blue: #191946;
+}
+
 body, html {
     height: 100%;
 }
 
 body {
-    color: #725f82;
+    color: var(--dark-blue);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*header style*/ 
 header {
-    padding: 20px 35;
-    background-color: #725f82;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
 }
 
 header h1 {
@@ -28,7 +39,9 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: rgb(207, 194, 71);
+    color: var(--pink);
+    padding: 10px 20px;
+    display: flex;
 }
 
 header nav {
@@ -39,12 +52,21 @@ header nav ul li {
     display: inline-flex;
     border: 1px solid lavender;
 }
+/*header style end*/
 
 .hero {
-    background-image: url('../assets/images/soulshine-fitness-header.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('../assets/images/soulshine-fitness-header-3.jpg');
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+}
+
+.register-button {
+    font-size: 50px;
+    display:flex;
 }
