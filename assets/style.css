@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    color: #725f82;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 20px 35;
+    background-color: #725f82;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: x-large;
+    color: lavender;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(207, 194, 71);
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-flex;
+    border: 1px solid lavender;
+}
+
+.hero {
+    background-image: url('../assets/images/soulshine-fitness-header.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
